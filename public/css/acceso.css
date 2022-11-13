@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    background-color: rgb(247, 240, 240);
+    font-size: .9rem;
+}
+
+body{
+    min-height: 100vh;  
+}
+
+/* CABECERA *************************************************************/
+
+.cabecera{
+    background: rgb(30, 44, 0);
+    background: linear-gradient(0deg, rgba(50, 80, 0,1) 0%, rgba(30, 44, 0,1) 100%);
+    font-size: .9rem;
+    font-weight: lighter;
+    color: white;
+    height: auto;
+    width: 100%;
+}
+
+.content_contenido_cabecera{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;    
+}
+
+.pres1{
+    display: flex;
+    align-items: center;
+}
+
+.presentacion img{
+    margin: 10px;    
+    padding: 2px;
+    border-radius: 3px;
+
+}
+
+.presentacion span{
+    margin-right: 30px;
+}
+
+.loginpub img{
+    margin: 10px;    
+}
+
+
+/*                                          CUERPO                              */
+
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+    padding: 20px;
+    width: 100%;  
+    
+}
+
+.content_imgcard{
+    background-color: white;
+    margin: auto;
+    color: rgb(80, 80, 80);
+    width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 2px 2px 2px grey;  
+}
+
+.imgfondo{
+    width: 50%;
+    height: 350px;
+    background-image: url(../img/villah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card{
+    width: 50%;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.card-header{
+    font-size: 1.5rem;   
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.row_mb-3{
+    margin: 10px;
+}
+
+.form-control{
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.row_mb-0{
+    text-align: center;
+}
+
+.col-md-8-offset-md-4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input{
+    outline: none;
+    border: none;
+}
+
+.btn-primary{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background: rgb(96,149,0);
+    background: linear-gradient(0deg, rgba(47,83,1,1) 0%, rgba(96,149,0,1) 100%);
+    color: white;
+    margin: 15px 0px;
+    width: 60%;
+}
+
+.btn-primary:hover{
+    background: linear-gradient(0deg, rgba(47,83,1,1) 0%, rgba(96,149,0,1) 80%);
+}
+.btn-link{
+    font-size: .9rem;
+    font-weight: bold;
+    color: rgb(2, 73, 0);
+    text-decoration: none;
+    margin: 5px;
+}
+/*                            CIERRE DE SESION                   */
+
+.navbar-brand, .nav-item-dropdown, .card-regclose, .card-body-regclose{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    text-decoration: none;
+}
+
+.navbar-brand{
+    height: 50px;
+    background-color: rgb(2, 73, 0);
+    color: white;
+}
+#navbarDropdown{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(2, 73, 0);
+    margin: 20px;
+}
+
+.card-regclose{
+    padding: 20px;
+}
+
+.dropdown-item{
+    background-color: rgb(2, 73, 0);
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.card-body-regclose{
+    color: red;
+    font-weight: bold;
+    font-size: small;
+}
+
+/* Pie de pagina *************************************************************/
+
+.pie{
+    background: rgb(47, 83, 1);
+    font-size: 1rem;
+    font-weight: lighter;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.tit_condomin{
+    font-weight: bold;
+}
+
+/*                                        responsive                   */
+
+@media screen and (max-width: 980px){
+
+    .cabecera{
+        height: auto;   
+    }
+
+    .content_contenido_cabecera{
+        justify-content: right;
+    }   
+
+    .loginpub, .pres1:not(:first-child){
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 886px){
+
+    .imgfondo{
+        display: none;
+    }
+    
+    .content_imgcard{
+        width: auto;
+    }   
+
+    .card{
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    .content_contenido_cabecera{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 558px){
+
+    .content_contenido_cabecera{
+        width: 100%;
+    }
+
+    .presentacion{
+        margin-bottom: 8px;
+    }
+
+    .pie{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 430px){
+
+.content_imgcard{
+    width: 100%;
+}   
+
+.card{
+    width: 90%;
+}
+}

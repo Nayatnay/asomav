@@ -1,0 +1,353 @@
+/*Paleta de colores
+    .color1 {color: #12382a;}
+    .color2 {color: #124e34;}
+    .color3 {color: #3f7647;}
+    .color4 {color: #79a960;}
+    .color5 {color: #c4e779;} */
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    min-width: 320px;
+    background-color: white;
+    
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgba(2, 73, 0, 0.10); 
+}
+
+/* CABECERA *************************************************************/
+
+.cabecera{    
+    font-size: .8rem; 
+    height: auto;
+    width: 100%;
+}
+
+.content_contenido_cabecera{
+    width: 84%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: white;
+    color: rgb(80, 80, 80);
+}
+
+.presentacion{
+    display: flex;
+    align-items: center;    
+}
+
+.pres1{
+    display: flex;
+    align-items: center;
+}
+
+.presentacion img{
+    background: linear-gradient(0deg, rgba(96,149,0,1) 0%, rgba(47,83,1,1) 100%);
+    margin: 10px;    
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.presentacion span{
+    margin-right: 20px;
+}
+
+.loginpub img{
+    margin: 10px;    
+}
+
+/*Logo empresarial y Barra de navegacion*                                           */
+
+.content_menu{
+    width: 100%;
+    background: rgb(30, 44, 0);
+    background: linear-gradient(0deg, rgba(50, 80, 0,1) 0%, rgba(30, 44, 0,1) 100%);
+    color: white;
+}
+
+.menu{
+    width: 84%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    margin: 0px 10px;    
+}
+
+.logo h1{
+    font-size: 1.8rem;
+    margin-left: 5px;
+}
+
+.bar_nav a{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    
+    color: white;
+}
+
+.bar_nav a:hover{
+    background: rgba(47, 83, 1, 0.5);
+}
+
+.bar_nav img{
+    margin-left: 5px;
+}
+
+.item_nav{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cuerpo{
+    min-height: 100vh;
+    background-color: white;
+    width: 84%;
+    margin: auto;
+}
+
+/* Miscelaneos: Foto y anuncio *********************************************/
+
+.content_miscel{
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    background-image: url(../img/villah.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+
+.miscelaneos{
+    height: auto;
+    text-align: right;    
+    font-size: 1.5rem;    
+    width: 100%;
+}
+
+.text_miscelaneos{
+    background-color: rgba(28, 29, 28, 0.25);
+    padding: 60px;
+    height: 400px;
+}
+
+.miscelaneos p{
+    font-size: 1rem;
+}
+
+/*Informacion Bancaria********************************************************/
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Content_datosbanco{
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.desg_banc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.tit_datbanc{
+    color: rgb(2, 73, 0);
+    font-size: 1.5rem;  
+    text-align: center;
+    margin: 20px 0px;  
+}
+
+.pagomd{
+    font-size: .8rem;  
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    width: auto;
+    border: 1px solid green;
+    border-radius: 6px;
+    background-color: rgb(240, 255, 244);
+    margin: 10px;
+}
+
+.img_pmov{
+    padding: 0px 10px;   
+}
+
+.pagmov{    
+    color: rgb(2, 73, 0);
+    padding: 0px 15px;
+    border-left: 1px solid grey;
+}
+
+.pagmov h3{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: green;
+    margin-bottom: 5px;
+}
+
+.pagmov span{
+    font-size: 1.3rem;
+    font-weight: lighter;
+    color: green;
+}
+
+.pagmov .mvl{
+    font-weight: bold;
+    color: rgb(2, 73, 0);
+}
+
+/* Pie de pagina *************************************************************/
+
+.pie{
+    background: rgb(47, 83, 1);
+    font-size: .8rem;
+    font-weight: lighter;
+    color: white;
+    width: 84%;
+    margin: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.tit_condomin{
+    font-weight: bold;
+}
+
+/* Responsive Responsive Responsive Responsive Responsive Responsive Responsive */
+
+@media screen and (max-width: 1246px){
+
+    .pagomd{
+        flex-direction: column;
+    }
+
+    .pagmov{
+        border: none;
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1086px){
+
+    .cabecera{
+        height: auto;   
+    }
+
+    .content_contenido_cabecera{
+        justify-content: right;
+    }   
+
+    .loginpub, .pres1:not(:first-child){
+        display: none;
+    }
+
+    .menu{
+        height: auto;   
+    }    
+}
+
+@media screen and (max-width: 1024px){
+    
+    .content_contenido_cabecera, .menu, .cuerpo, .Content_datosbanco, .content_miscel, .pie{
+        width: 100%;
+    } 
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    
+    .Content_datosbanco{
+        padding: 20px 10px;
+    }
+    
+    .desg_banc{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pagomd{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 558px){
+
+    .presentacion{
+        margin-bottom: 8px;
+    }
+    
+    .logo img{
+        margin-left: 20px;
+        margin-right: 0px;
+    }
+
+    .item_nav span{
+        display: none;
+    }
+
+    .text_miscelaneos{
+        text-align: center;
+        padding-top: 300px;
+    }
+    
+    .text_miscelaneos p{
+        font-size: .8rem;
+    }
+
+    .text_miscelaneos h2{
+        display: none;
+    }
+
+    .tit_datbanc{
+        font-size: 1.3rem;
+    }
+
+    .pie{
+        font-size: .7rem;
+    }
+}
