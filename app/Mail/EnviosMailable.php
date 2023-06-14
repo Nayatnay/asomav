@@ -7,12 +7,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class EnviosMailable extends Mailable
+class EnviosMailable extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
     public $envio;
-
+    public $tries = 3;
+    public $backoff = 3;
 
     public function __construct($envio)
     {
